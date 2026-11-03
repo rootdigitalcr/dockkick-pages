@@ -1,0 +1,39 @@
+name: Bug report / Informar de un problema
+description: Report a DockKick problem using generic examples. The report is public.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Do not include passwords, tokens, private clipboard text, personal paths or an unredacted configuration. Este informe es público: anonimiza los datos."
+  - type: input
+    id: version
+    attributes:
+      label: DockKick version / Versión
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and display scale / Windows y escala
+      placeholder: "Windows 11, 125%"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected result / Pasos y resultado esperado
+      description: Use generic examples. Usa ejemplos sin datos personales.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual result or error / Resultado o mensaje de error
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check / Privacidad
+      options:
+        - label: I removed private data from this report and attachments. He eliminado datos privados del informe y adjuntos.
+          required: true
