@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Privacy and security / Privacidad y seguridad
+    url: https://rootdigitalcr.github.io/dockkick-pages/en/privacy.html
+    about: Use the private email shown in the policy. Do not post secrets in an issue.
